@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Montserrat:wght@100;300&display=swap');
+
+/* General Typography */
+html, body {
+    font-family: 'Josefin Sans', sans-serif; 
+    font-weight: 600;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; 
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 20px; 
+}
+
+/* Background */
+.home {
+    background-image: url("/static/images/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    background-color: #f4f4f4;
+}
+
+/* Book styling */
+.book {
+    width: 20rem;
+    display: inline-block;
+    margin: 20px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.2s; 
+}
+
+.book:hover {
+    transform: translateY(-10px); 
+}
+
+.book .card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #555; 
+}
+
+/* Image centering */
+#photo {
+    margin: 20px auto;
+    display: block;
+    border-radius: 50%; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Wrappers */
+.pwrapper, .mwrapper, .bwrapper {
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+.profile.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+/* Description styling */
+.bookdesc {
+    font-size: 0.95rem; 
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+
+/*New Styles for Book Layout*/
+.book {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.platform-icons i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.bi-youtube {
+    color: rgb(212, 38, 25);
+}
+
+.bi-xbox {
+    color: green;
+}
+
+.bi-windows {
+    color: rgb(39, 144, 185);
+}
+
+/**/
+.card.book {
+    transition: box-shadow 0.3s ease;
+}
+
+.card.book:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+/**/
+.welcome {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+#searchInput {
+    border-radius: 25px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+}
+
+.btn-primary {
+    border-radius: 25px;
+}
+/* */
+.profile-pic-div {
+	margin-bottom: 20px;
+}
+
+#photo {
+	border-radius: 50%;
+	transition: transform 0.3s ease;
+}
+
+#photo:hover {
+	transform: scale(1.05);
+}
+
+.nav-tabs .nav-link.active {
+	background-color: #f5f5f5;
+	border-color: #dee2e6 #dee2e6 #f5f5f5;
+}
+#searchInput::placeholder, #searchHelp {
+    font-weight: 600;
+    color: #333333e6;
+}
+
+/**/
+input, textarea, select {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    color: #333; 
+    font-size: 1rem; 
+}
+/**/
+#emailHelp {
+    font-weight: 600; 
+}
+
+/**/
+.btn {
+    font-weight: 600;
+}
+
+.login-bg {
+    background-image: url('/static/images/login_bg.jpg');
+    background-size: cover;   /* To cover the entire viewport */
+    background-repeat: no-repeat;
+    background-position: center;
+}

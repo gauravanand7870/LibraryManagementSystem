@@ -1,0 +1,42 @@
+{%extends "/shared/layout.html" %}
+
+{% block title %}Signin{% endblock %}
+
+{% block head %}
+	{{ super() }}
+
+    <link rel="stylesheet" href="/static/home.css" />
+{% endblock %}
+
+{% block content %}
+	<div class="container d-flex h-75 login-bg">
+	    <div class="row justify-content-center align-self-center welcome">
+			<h4>Sign In</h4>
+
+			<div style="width:90%">
+			{% if error %}
+				<div class="alert alert-danger">
+					{{error}}
+				</div>
+			{% endif %}
+			<form action="/signin" method="POST">
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Email Address</label>
+			    <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Password</label>
+			    <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+			  </div>
+
+			  <div class="form-group">
+				<p>Don't have an account? <a href="/signup">Sign Up instead!</a></p>
+			  </div>
+
+			  <button type="submit" class="btn btn-primary">Sign In</button>
+			  	<!-- <a style="margin-left: 10px" href="/signup">Or join us now!</a> -->
+			</form>
+			</div>
+	    </div>
+	</div>
+{% endblock %}

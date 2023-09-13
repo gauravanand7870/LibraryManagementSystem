@@ -1,0 +1,26 @@
+{%extends "/shared/layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block head %}
+	{{ super() }}
+    <link rel="stylesheet" href="/static/home.css" />
+	<link
+{% endblock %}
+
+{% block content %}
+	<div class="container mt-5 pt-5">
+	    <div class="row justify-content-center welcome">
+	    	<h2 class="text-center text-primary mb-4">Welcome!</h2>
+	    	<div class="col-md-8">
+				<form action="/books/search" method="GET">
+				  <div class="form-group">
+				    <input type="search" autocomplete="false" name="keyword" autofocus class="form-control" id="searchInput" aria-describedby="searchHelp" placeholder="Enter the book you want to search for ">
+				    <small id="searchHelp" class="form-text text-muted text-center mt-2">Members can view the list of available books</small>
+				  </div>
+				  <button type="submit" class="btn btn-primary w-100 mt-3">Search</button>
+				</form>
+			</div>
+	    </div>
+	</div>
+{% endblock %}
